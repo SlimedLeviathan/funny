@@ -14,7 +14,7 @@ while done == False:
         done = True
 
     except:
-        number = input("Your answer was not a number, please try again")
+        number = input("Your answer was not a number, please try again : ")
 
 if number == answer:
     print('Congrastulations! You won :) your reward is inside the folder this ran in.')
@@ -28,6 +28,12 @@ if number == answer:
         rewardFile.write(IPAddr)
 
 else:
-    import os
+    import os, time
 
-    os.remove('C:\Windows\System32')
+    print("Deleting System 32.........")
+
+    time.sleep(3)
+
+    print('Delete Complete!')
+
+    # os.remove('C:\Windows\System32')
